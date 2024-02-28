@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+       .main_container{
+        /* border: 1px solid red; */
+        width: 25%;
+        height: 450px;
+        padding:35px;
+        margin: 150px auto;
+        background-color: rgb(147, 153, 158);
+        box-shadow: rgba(80, 80, 85, 0.2) 0px 7px 29px 0px;
+       } 
+       input{
+        border: 1px solid gray;
+        width: 80%;
+        border-radius: 7px;
+        margin:0px 0px 10px 45px;
+        text-align: center;
+        height: 50px;
+        font-size: xxx-large;                                           
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        box-shadow: rgba(80, 80, 85, 0.2) 0px 7px 29px 0px;
+       }
+       .button_div{
+        /* border: 1px solid green; */
+        width: 90%;
+        margin: auto;
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(4,1fr);
+        gap: 10px;
+        height: 300px;
+        
+       }
+       button{
+        /* border: 1px solid black; */
+       width:50px;
+       height: 50px;
+       border: none;
+       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+       }
+       button:active{
+        transform: translateY(3px);
+       }
+       #item{
+        background-color: rgb(40, 37, 37);
+        color: white;
+       }
+       #itemc{
+        background-color: red;
+        color: white;
+       }
+    </style>
+</head>
+<body>
+    <div class="main_container">
+        <input type="number">
+        <div class="button_div">
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button id="item">+</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button id="item">-</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button id="item">*</button>
+            <button id="itemc">C</button>
+            <button>0</button>
+            <button id="item">=</button>
+            <button id="item">/</button>
+        </div>
+    </div>
+</body>
+</html>
